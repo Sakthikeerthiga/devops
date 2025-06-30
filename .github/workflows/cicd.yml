@@ -48,5 +48,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'sakthiWeb'
-          publish-profile: s{{ secrets.AZURE_PUBLISH }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH }}
           images: '${{ secrets.DOCKER_USERNAME }}/devops:${{ github.sha }}'
