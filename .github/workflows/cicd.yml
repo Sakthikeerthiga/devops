@@ -37,7 +37,8 @@ jobs:
 
     steps:
     - name: Check out branch
-      uses: actions/ceckout@v4
+      uses: actions/checkout@v4
+
 
     - name : Docker Login
       uses: docker/login-action@v2
